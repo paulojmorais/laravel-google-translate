@@ -53,7 +53,7 @@ class GoogleTranslateClient
 
     private function checkForInvalidConfiguration(array $config)
     {
-        if (!file_exists($config['key_file_path'])) {
+        if (!file_exists($config['key'])) {
             throw new Exception('The json file does not exist at the given path');
         }
 
