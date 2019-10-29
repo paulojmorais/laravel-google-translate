@@ -53,8 +53,8 @@ class GoogleTranslateClient
 
     private function checkForInvalidConfiguration(array $config)
     {
-        if (!file_exists($config['key'])) {
-            throw new Exception('The json file does not exist at the given path');
+        if (empty($config['key'])) {
+            throw new Exception('The Google API KEY is required');
         }
 
         $codeInConfig = $config['default_target_translation'];
