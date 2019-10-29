@@ -17,7 +17,7 @@ class GoogleTranslateClient
         $this->checkForInvalidConfiguration($config);
 
         $this->translate = new TranslateClient([
-            'keyFilePath' => $config['key_file_path']
+            'key' => $config['key']
         ]);
     }
 
