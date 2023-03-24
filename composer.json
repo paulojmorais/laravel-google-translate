@@ -49,6 +49,6 @@
     "config": {
         "sort-packages": true
     },
-    "minimum-stability": "master",
+    "minimum-stability": "stable",
     "prefer-stable": true
 }
